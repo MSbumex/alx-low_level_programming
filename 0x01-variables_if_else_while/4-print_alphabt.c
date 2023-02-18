@@ -10,7 +10,7 @@ int main(void)
 	char lower, e, q;
 
 	e = 'e';
-	a = 'a';
+	q = 'q';
 
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
