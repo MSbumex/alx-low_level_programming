@@ -5,15 +5,15 @@
 /**
  * main - Entry point
  *
- * Return:gives 0  Always
+ * Return: gives 0  Always
  */
 
 int main(void)
 {
-	char l;
+	char low;
 
-	for (l = 'a'; l <= 'z'; l++)
-		putchar(l);
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
 		putchar('\n');
 
 	return (0);
