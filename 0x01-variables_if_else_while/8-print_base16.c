@@ -12,7 +12,7 @@ int main(void)
 	int num;
 	char low_c;
 
-	for (num = 0; num < 10; num++)
+	for (num = '0'; num <= '9'; num++)
 	{
 		putchar(num);
 	}
