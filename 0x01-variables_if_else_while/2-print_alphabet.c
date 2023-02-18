@@ -9,10 +9,11 @@
 
 int main(void)
 {
-	char i;
+	char lower_case;
 
 	for (i = 'a'; i <= 'z'; i++)
-		putchar("%c \n", i);
+		putchar(lower_case);
+		putchar("\n");
 
 	return (0);
 }
