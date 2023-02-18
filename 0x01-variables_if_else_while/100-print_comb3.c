@@ -10,18 +10,22 @@
 int main(void)
 {
 
-	int d;
+	int a, b;
 
-	for (d = 0; d < 100; d++)
+	for (a = 0; a <= 8; a++)
 	{
-		putchar((d / 10) + '0');
-		putchar((d % 10) + '0');
-		if (d != 99)
+		for (b = a + 1; b <= 9; b++)
+		{
+			putchar((a % 10) + '0');
+			putchar((b % 10) + '0');
+		}
+		if (a == 8 && b == 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
