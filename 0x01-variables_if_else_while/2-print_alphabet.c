@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
-*main - entry point
-*
-* Return: gives  0 always
-*/
+ * main - Entry point
+ *
+ * Return:gives 0  Always
+ */
 
 int main(void)
 {
-	char lower_case;
+	char lower;
 
-	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
-		putchar(lower_case);
-		putchar("\n");
+	for (lower = 'a'; lower <= 'z'; lower++)
+		putchar(low);
+		putchar('\n');
 
 	return (0);
 }
