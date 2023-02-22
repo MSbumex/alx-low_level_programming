@@ -1,9 +1,9 @@
 #include"main.h"
 /**
-*main header- declaring the prototype function
-*main- entry point
-*Return: 0 always
-*/
+ * print_alphabet - Check description
+ * Description:  to prints the alphabet in lowercase followed by a new line
+ * Return: Nothing
+ */
 
 void print_alphabet(void)
 {
