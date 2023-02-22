@@ -1,18 +1,17 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point
+ * main - Entry point and check code
+ * print letters
  * Return: 0 to return if sucess
  */
 int main(void)
 {
-	char str[8] = "function";
+	char str[10] = {"putchar"};
 	int i;
 
-	for (i = 0; i < 7; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(word[i]);
-
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 
