@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char str[7] = "putchar";
+	char str[8] = "function";
 	int i;
 
 	for (i = 0; i < 7; i++)
