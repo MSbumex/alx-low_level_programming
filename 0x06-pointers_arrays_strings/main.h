@@ -6,7 +6,7 @@
  * 0x06. C - More pointers, arrays and strings  and tasks and
  * the prototype of the function _putchar included;
  */
-int _putchar(char c)
+int _putchar(char c);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
