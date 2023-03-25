@@ -1,5 +1,6 @@
-#ifndef main_h
-#define main_h
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+
 /**
  * main - declaration for the prototype
  * This is header file containing prototypes of all functions created in
