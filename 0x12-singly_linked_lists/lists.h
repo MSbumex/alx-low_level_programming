@@ -1,11 +1,31 @@
 #ifndef main_h
 #define main_h
+#include <stdlib.h>
+#include <stddef.h>
+
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
 /**
  * main - declaration for the prototype
  * This is header file containing prototypes of all functions created in
  * 0x12. C - Singly linked lists  and tasks and
  * the prototype of the function _putchar included;
  */
+
+
 int _putchar(char c);
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
