@@ -1,18 +1,17 @@
-section .text
-global main
+global 	main
+	extern 	printf
+
+	section .text
+main:
+	mov	rdi, format
+	mov	rax, 0
+	call	printf
+	mov	rax, 0
+	call    printf
+        pop     rbp
+	ret
 
 section .data
-msg:		db "Hello, Holberton", 0
-fmt:		db "%s", 10, 0
-msglen: 	equ $ - msg
+format:
+	db "Hello, Holberton", 10, 0
 
-main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, msglen
-	syscall
-
-	mov rax, 60
-	mov rdi, 0
-	syscall
