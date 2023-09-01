@@ -18,3 +18,8 @@ All your files must be executable
 Project - 0x09. C - Static libraries
 Static libraries are just collections of object files that are linked into 
 the program during the linking phase of compilation, and are not relevant during runtime.
+ 
+create a libmy file - ar rcs libmy.a
+copy all .o files into libmy.a file - ar rcs libmy.a *o
+to  list, object files or content  in the library use -:  ar -t libmy.a
+lists each symbol's symbol value, symbol type, and symbol name from object files.-:  nm libmy.a
