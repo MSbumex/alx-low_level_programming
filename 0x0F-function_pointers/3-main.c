@@ -4,8 +4,8 @@
 
 /**
   * main - check the code
-  * @argc:
-  * @argv:
+  * @argc: number of cmd line parameters
+  * @argv: an array of null-terminated strings
   *
   * Return:always 0
   */
