@@ -1,39 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
-  * main - ...
-  * @argc: ...
-  * @argv: ...
-  *
-  * Return: ...
-  */
+ * main - function to print opcodes
+ * @argc: argument counter
+ * @argv: argument vector
+ *
+ * Return: Always 0
+ */
+
 int main(int argc, char *argv[])
 {
-	ud_t ud_obj;
-	int val = 0, i = 0;
+	int bytes, i;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
 
-	if (argc == 2)
+	if (argc != 2)
 	{
-		val = atoi(argv[1]);
-
-		if (val < 0)
-		{
-			printf("Error\n");
-			exit(2);
-		}
-
-		ud_unit(&ud_obj);
-		ud_set_input_buffer(&ud_obj, argv[1], val);
-		ud_set_mode(&ud_obj, 64);
-		ud_set_syntax(&ud_obj, UD_SYN_INTEL);
-
-		while (ud_disassemble(&ud_obj))
-		{
-			printf("\t%s\n", ud_insn_hex(&ud_obj));
-		}
+		printf("Error\n");
+		exit(1);
 	}
-
+	bytes = atoi(argv[1]);
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	for (i = 0; i < bytes; i++)
+	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
+		if (i == bytes - 1)
+		{
+			continue;
+		}
+		printf(" ");
+		address++;
+	}
+	printf("\n");
 	return (0);
-
+}
