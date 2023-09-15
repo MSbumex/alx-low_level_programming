@@ -31,7 +31,7 @@ int op_sub(int a, int b)
   * @a: int
   * @b: int
   *
-  * Return:
+  * Return: value
   */
 int op_mul(int a, int b)
 {
@@ -43,7 +43,7 @@ int op_mul(int a, int b)
   * @a: int
   * @b: int
   *
-  * Return: ...
+  * Return:value
   */
 int op_div(int a, int b)
 {
@@ -61,7 +61,7 @@ int op_div(int a, int b)
   * @a: int
   * @b: int
   *
-  * Return:
+  * Return: value
   */
 int op_mod(int a, int b)
 {
